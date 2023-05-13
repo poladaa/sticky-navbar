@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  background-color: #dbe4ff;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar img {
+  width: 50%;
+}
+
+.navbar ul {
+  display: flex;
+  margin-top: 1rem;
+  margin-right: 3rem;
+  gap: 3rem;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: #343a40;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.navbar ul li a:hover {
+  transition: all 0.5s ease-in;
+  color: #c92a2a;
+}
+
+.top-container {
+  background-image: url(andrea-de-santis-CGSYtth5Bdw-unsplash.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-container h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #1971c2;
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+
+.bottom-container p {
+  color: red;
+  padding: 1rem;
+  border: 1px solid #333;
+  font-family: cursive;
+  font-size: 1.8rem;
+  margin: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar.active {
+  background-color: #1864ab;
+}
+.navbar.active ul li a {
+  color: #fff;
+}
+
+.transition {
+  transition: all 0.7s ease-in;
+}
